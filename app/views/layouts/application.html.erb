@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Noftc</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<%= stylesheet_link_tag params[:controller] %>.
+
+<div id="page" class="hfeed">
+	<a class="home_link" href="/">
+		<div class = "subheader">
+		
+	<%= image_tag "logo.png", :id => "logo" %>
+	</div>
+</a>
+
+	<header>
+<h1 id="main_title">Take Action</h1>
+	<h3> to Help Get NOLA Food Trucks Moving</h3>
+	<ol>
+		<li class="nav_item">
+	 		<a href="https://www.change.org/petitions/it-s-time-to-change-food-truck-laws-in-new-orleans?utm_campaign=url_share_before_sign&utm_medium=url_share&utm_source=share_petition" target="_blank"> Sign the petition </a>
+		</li>
+		<li class="nav_item">
+		<a href="http://nolacitycouncil.com/meet/meet.asp" target="_blank">	Email your councilmember</a>	
+		</li>
+		<li class="nav_item">
+		<a href = "/restaurant">Ask your favorite restaurant to join</a>
+		</li>	
+	</ol>
+	</header>
+<div class="content">
+<%= yield %>
+</div>
+
+</div>
+</body>
+</html>
